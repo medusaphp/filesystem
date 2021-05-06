@@ -2,6 +2,7 @@
   "name": "medusa/filesystem",
   "type": "library",
   "description": "File and directory abstraction layer",
+  "license": "MIT",
   "authors": [
     {
       "name": "Pascal Schnell",
