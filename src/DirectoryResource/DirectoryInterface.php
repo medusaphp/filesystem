@@ -1,7 +1,7 @@
 <?php declare(strict_types = 1);
 namespace Medusa\FileSystem\DirectoryResource;
 
-use Medusa\FileSystem\FileSystem\FileSystemResourceInterface;
+use Medusa\FileSystem\FileSystemResourceInterface;
 
 /**
  * Class Directory

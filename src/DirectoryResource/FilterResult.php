@@ -3,7 +3,7 @@ namespace Medusa\FileSystem\DirectoryResource;
 
 use Medusa\FileSystem\DirectoryResource\Filter\FilterInterface;
 use Medusa\FileSystem\FileResource\File;
-use Medusa\FileSystem\FileSystem\FileSystemResourceInterface;
+use Medusa\FileSystem\FileSystemResourceInterface;
 use RecursiveIteratorIterator;
 use SplFileInfo;
 

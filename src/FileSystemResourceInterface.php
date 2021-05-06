@@ -1,5 +1,5 @@
 <?php declare(strict_types = 1);
-namespace Medusa\FileSystem\FileSystem;
+namespace Medusa\FileSystem;
 
 use SplFileInfo;
 

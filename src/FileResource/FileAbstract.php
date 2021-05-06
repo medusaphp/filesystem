@@ -2,7 +2,7 @@
 namespace Medusa\FileSystem\FileResource;
 
 use LogicException;
-use Medusa\FileSystem\FileSystem\FileSystemResourceInterface;
+use Medusa\FileSystem\FileSystemResourceInterface;
 use SplFileInfo;
 use function basename;
 use function copy;
@@ -111,7 +111,7 @@ abstract class FileAbstract implements FileInterface {
     /**
      * Set SplFileInfo
      * @param SplFileInfo $splFileInfo
-     * @return FileSystemResourceInterface
+     * @return \Medusa\FileSystem\FileSystemResourceInterface
      */
     public function setSplFileInfo(SplFileInfo $splFileInfo): FileSystemResourceInterface {
         $this->splFileInfo = $splFileInfo;
@@ -132,7 +132,7 @@ abstract class FileAbstract implements FileInterface {
     abstract public function getContent(): string;
 
     /**
-     * @param FileSystemResourceInterface $resource
+     * @param \Medusa\FileSystem\FileSystemResourceInterface $resource
      * @return void
      */
     public function move(FileSystemResourceInterface $resource): void {
@@ -154,7 +154,7 @@ abstract class FileAbstract implements FileInterface {
     }
 
     /**
-     * @param FileSystemResourceInterface $resource
+     * @param \Medusa\FileSystem\FileSystemResourceInterface $resource
      * @return void
      */
     public function copy(FileSystemResourceInterface $resource): void {
@@ -167,8 +167,8 @@ abstract class FileAbstract implements FileInterface {
     }
 
     /**
-     * @param FileSystemResourceInterface $targetResource
-     * @return FileSystemResourceInterface
+     * @param \Medusa\FileSystem\FileSystemResourceInterface $targetResource
+     * @return \Medusa\FileSystem\FileSystemResourceInterface
      * @throws LogicException
      * @csIgnoreReturnType Because Interface return type is defined.
      */

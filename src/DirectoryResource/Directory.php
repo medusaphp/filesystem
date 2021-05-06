@@ -5,7 +5,7 @@ use LogicException;
 use Medusa\FileSystem\DirectoryResource\Filter\DirectoryFileFilter;
 use Medusa\FileSystem\DirectoryResource\Filter\FilterInterface;
 use Medusa\FileSystem\FileResource\FileInterface;
-use Medusa\FileSystem\FileSystem\FileSystemResourceInterface;
+use Medusa\FileSystem\FileSystemResourceInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use SplFileInfo;
@@ -124,7 +124,7 @@ class Directory implements DirectoryInterface {
     }
 
     /**
-     * @param FileSystemResourceInterface $resource
+     * @param \Medusa\FileSystem\FileSystemResourceInterface $resource
      * @return void
      */
     public function copy(FileSystemResourceInterface $resource): void {
